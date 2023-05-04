@@ -100,7 +100,7 @@ header h1{
 .apresentacao p{
   margin: 0;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.5; /*define a altura da caixa que um conteúdo de texto pertence*/
 }
 
 .cardsDireita{
@@ -186,7 +186,7 @@ header h1{
 }
 
 .produtosbm:hover{
-  box-shadow: 0 1px 9px rgba(60%, 20%, 60%, 0.9);
+  box-shadow: 0 1px 9px rgba(60%, 20%, 60%, 0.9); /*forma a cor roxa em rgb*/
   transition: box-shadow .6s;
   border-radius: 30px;
 }
@@ -299,7 +299,7 @@ header h1{
 .icones a img{
   width: 50px;
   height: 50px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out; /*realiza a transição com o início e final lentos*/
 }
 
 .icones a:hover img{ /*faz com que a imagem ganhe destaque quando o mouse passa por cima*/
@@ -334,7 +334,7 @@ footer{
 
 .r_header{
   font-size: 10px;
-  text-transform: uppercase;
+  text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas*/
   cursor: pointer;
   pointer-events: auto;
 }
@@ -346,7 +346,7 @@ footer{
   margin-left: 10px;
   margin-right: 10px;
   transform: scaleX(0.2);
-  transform-origin: left;
+  transform-origin: left; /*faz a linha surgir da esquerda*/
   transition: transform 0.5s;
 }
 
