@@ -1,0 +1,466 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Candara, Helvetica, sans-serif; 
+  margin: 0;
+  background-color: #ffccd4;
+  height: 100%;
+}
+
+/*header da pagina inicial*/
+nav{
+  background-image: linear-gradient(#ff8093, #ffa3b1, #ffccd4); /* faz a nav do header ficar com degradê na cor*/
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  user-select: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu1,.menu2{
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu1 a,.menu2 a{
+  color: purple;
+  font-size: 3vh;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color .5s; /*faz o menu ter transição quando o cursor do mouse passa por cima*/
+}
+
+.menu1 a:hover{
+  background-color: #640264;
+  color: #ff8093;
+  transition: background-color .8s;
+}
+
+.menu2 a:hover{
+  background-color: #640264;
+  color: #ff8093;
+  transition: background-color .8s;
+}
+
+.logo{
+  height: 10vh;
+  display: flex;
+}
+
+.logo a{
+  height: 10vh;
+  display: flex;
+}
+
+header h1{
+  text-align: center;
+  color: purple;
+}
+
+/*fundo de todas as paginas*/
+.fundo{
+  background-image: url("./imagens/logo2.jpg");
+  background-size: cover; /*define o tamanho do fundo*/
+  z-index: -1; /* faz com que o fundo fique atras do conteudo*/
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+/*pagina inicial*/
+.conteudo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.apresentacao{
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.apresentacao p{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.cardsDireita{
+  margin-right: 20px;
+  position: relative;
+  float: right;
+  width: 50%;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.card{
+  background-color: white;
+  border-radius: 10px; 
+  display: grid;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.cardsDireita h1{
+  text-align: center;
+  color: #610061;
+}
+
+.produtos{
+  margin: 5px;
+  padding: 10px;
+  transition: box-shadow .5s; 
+  border-radius: 10px;
+}
+
+.produtos img{
+  border-radius: 50%;
+  height: 150px;
+  border: 2px solid black;
+  margin-top: 5px;
+}
+
+.produtos:hover{
+  box-shadow: 0 1px 9px rgba(60%, 20%, 60%, 0.9);
+}
+
+.rodapeHome{
+  margin-top: 15px;
+}
+
+/*bolsas de malha*/
+.textoDireitabm{
+  width: 45%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: justify;
+  float: right;
+  font-size: 20px;
+  margin: 10px 15px 10px 15px;
+}
+
+.cardsEsquerdabm{
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px 10px 10px 15px;
+  float: left;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+
+.produtosbm{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.produtosbm img {
+  border-radius: 50%;
+  height: 150px;
+  border: 2px solid black;
+  margin: 0 5px 0 5px;
+}
+
+.produtosbm:hover{
+  box-shadow: 0 1px 9px rgba(60%, 20%, 60%, 0.9);
+  transition: box-shadow .6s;
+  border-radius: 30px;
+}
+
+/*bolsas de poliester*/
+#conteudopoliester{
+  align-items: center;
+  justify-content: space-between;  
+  text-align: center;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.poliestertexto{
+  width: 50%;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 15px;
+  padding: 20px;
+}
+
+.poliester{
+  margin: 0px 15px 0px 15px;
+  float: right;
+  width: 45%;
+}
+
+.cardpoliester{
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+/*carteiras*/
+.cardsEsquerda{
+  border-radius: 30px;
+  text-align: center;
+  margin: 0px 10px 10px 15px;
+  float: left;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+
+.textoDireita{
+  width: 45%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: justify;
+  float: right;
+  margin-right: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.produtoscarteira{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-left: 60px;
+  align-items: center;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.produtoscarteira img{
+  border-radius: 50%;
+  height: 150px;
+  border: 2px solid black;
+  margin-top: 5px;
+  width: 70%;
+}
+
+.produtoscarteira:hover{
+  box-shadow: 0 1px 9px rgba(60%, 20%, 60%, 0.9);
+  transition: box-shadow .6s;
+  border-radius: 30px;
+  margin: 10px 10px 10px 10px;
+}
+
+/*Sobre Nós*/
+.cont{
+  display: flex;
+}
+
+.contRedes{
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  text-align: justify;
+  margin: 0 20px 10px 20px;
+  font-size: 20px;
+}
+
+.icones{
+  text-align: center;
+}
+
+.icones a{
+  margin: 0 15px;
+  position: relative;
+}
+
+.icones a img{
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icones a:hover img{ /*faz com que a imagem ganhe destaque quando o mouse passa por cima*/
+  transform: scale(1.2);
+}
+
+.rodapeRedes{
+  margin-top: 157px;
+}
+
+/*rodapé de todas as paginas*/
+footer{
+  color: black;
+  width: 100%;
+  height: 31px;
+  font-family: "Poppins", sans-serif;
+  place-items: left;
+  position: relative;
+  bottom: 0px;
+}
+
+.nave{
+  background-image: linear-gradient(#ffccd4, #ffa3b1, #ff8093);
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+}
+
+.r_header{
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.linha{
+  width: 10rem;
+  height: 3px;
+  background-color: purple;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.nave:hover .linha{
+  transform: scaleX(1); /*aumenta ou diminui o tamanho da linha na tela*/
+}
+
+
+
+/*responsivo para telas 1920x1080*/
+/*@media screen and (max-width: 1920px){
+  body{
+    font-size: 20px;
+  }
+  
+  img{
+    width: 50%;
+    height: auto;
+  }
+
+
+  .menu1 a,.menu2 a{
+    display: block;
+    width: 500px;
+    text-align: center;
+  }
+
+  .logo img{
+    width: 100%;
+  }
+
+  .cardsDireita{
+    width: 50%;
+  }
+
+  .produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+
+  .produtos img{
+    width: 70%;
+  }
+
+  .apresentacao{
+    margin-top: 10px;
+  }
+
+  
+  .produtosbm img{
+    width: 70%;
+  }
+
+
+  .cardsEsquerda{
+    width: 56%;
+    height: 500px;
+  }
+
+  .textoDireita{
+    width: 40%;
+  }
+
+  .produtoscarteira{
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .produtoscarteira img{
+    width: 70%;
+  }
+
+
+  footer{
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 800px){
+    body{
+    font-size: 20px;
+  }
+  
+  img{
+    width: 40%;
+    height: auto;
+  }
+
+  .menu1 a,.menu2 a{
+    display: block;
+    width: 500px;
+    height: 700px;
+    text-align: center;
+  }
+
+  nav{
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo img{
+    width: 100%;
+  }
+
+  .produtos{
+    display: grid;
+    width: 50%;
+  }
+
+  .produtoscarteira img{
+    width: 50%;
+  }
+}*/ 
